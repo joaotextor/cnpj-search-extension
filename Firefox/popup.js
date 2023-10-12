@@ -1,6 +1,7 @@
 const $razaoSocial = document.querySelector(".razao_social");
 const $situacaoCadastral = document.querySelector(".situacao_cadastral");
 const $nomeFantasia = document.querySelector(".nome_fantasia");
+const $porte = document.querySelector(".porte");
 const $cnpj = document.querySelector(".cnpj");
 const $inicioAtividades = document.querySelector(".data_inicio_atividades");
 const $dataSituacaoCadastral = document.querySelector(
@@ -77,6 +78,12 @@ async function fillHTML() {
     dadosDaEmpresa.nome_fantasia ||
     formatText(false, 16, "span", "Não informado")
   }`;
+  $porte.innerHTML = `Porte: ${formatText(
+    false,
+    16,
+    "span",
+    dadosDaEmpresa.porte
+  )}`;
   $cnpj.innerHTML = `CNPJ: ${formatText(false, 16, "span", CNPJ)}`;
   $inicioAtividades.innerHTML = `Início das Atividades: ${formatText(
     false,
