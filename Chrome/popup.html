@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="popup.js" defer></script>
+    <link rel="stylesheet" href="./popup.css" />
+    <title>Busca CNPJ</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="razao_social"></h1>
+      <section class="section-principal">
+        <h2 class="situacao_cadastral"></h2>
+        <span class="nome_fantasia"></span>
+        <span class="cnpj"></span>
+        <span class="data_inicio_atividades"></span>
+        <span class="data_situacao_cadastral"></span>
+        <span class="endereco_completo"></span>
+        <span class="telefone"></span>
+      </section>
+      <details class="details-mei" open>
+        <summary>Dados MEI</summary>
+        <span class="dados opcao_pelo_MEI"></span>
+        <span class="dados data_opcao_pelo_mei"></span>
+        <span class="dados data_exclusao_do_mei"></span>
+      </details>
+      <details class="details-simples" open>
+        <summary>Dados Simples</summary>
+        <span class="dados opcao_pelo_simples"></span>
+        <span class="dados data_opcao_pelo_simples"></span>
+        <span class="dados data_exclusao_do_simples"></span>
+      </details>
+      <section class="section-atividades">
+        <p>Atividade Principal</p>
+        <p class="cnae_fiscal_descricao"></p>
+        <details open>
+          <summary>Atividades Secundárias</summary>
+          <div class="cnaes_secundarios"></div>
+        </details>
+      </section>
+      <section class="section-qsa">
+        <details open>
+          <summary>Quadro Societário</summary>
+          <div class="socios"></div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

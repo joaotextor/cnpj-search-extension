@@ -1,0 +1,107 @@
+:root {
+  font-size: 20px;
+  --color-accent: #005580;
+  --color-primary: #faebd7;
+  --color-disabled: #d7cec3;
+  --color-error: #b82222;
+}
+
+body {
+  margin: 0;
+  padding: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+
+body main {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  height: 100%;
+  min-height: calc(100vh - 30px);
+  width: calc(100vw - 60px);
+  padding-inline: 10px;
+  border: 10px solid var(--color-accent);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-block: 5px;
+}
+
+h2 {
+  margin-block: 5px;
+}
+
+.nome_fantasia {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cnpj {
+  font-weight: bold;
+}
+
+summary {
+  font-size: 16px;
+}
+
+.dados {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section-principal {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-accent);
+  padding-left: 5px;
+}
+
+.dados {
+  display: flex;
+  gap: 5px;
+}
+
+.details-mei summary,
+.details-simples summary {
+  margin-block: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details-mei,
+.details-simples {
+  border: 1px solid var(--color-accent);
+  padding-left: 5px;
+}
+
+.section-atividades {
+  margin-top: 5px;
+  font-weight: bold;
+  border: 1px solid var(--color-accent);
+  padding-left: 5px;
+}
+
+.section-atividades p {
+  margin-block: 5px;
+  font-size: 18px;
+}
+
+.section-atividades details summary {
+  margin-block: 5px;
+  font-size: 18px;
+}
+
+.section-qsa {
+  font-weight: bold;
+  margin-block: 5px;
+  border: 1px solid var(--color-accent);
+  padding-left: 5px;
+}
+
+.section-qsa details summary {
+  font-size: 18px;
+}
